@@ -1,5 +1,9 @@
 # falcon-js-fetch-boilerplate
 Python's Falcon &amp; JS fetch
+#### Falcon Framework
+https://falconframework.org/
+#### JS fetch() & json()
+https://developer.mozilla.org/en-US/docs/Web/API/Body/json
 
 ## JSON request and response example using Python wf Falcon and JS fetch
 
