@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from wsgiref import simple_server
-from middleware import public_cors, JSONTranslator
+from middleware import public_cors, JSONTranslator, RequireJSON
 from resources import HelloWorldResource
 import falcon
 
-wsgi_app = api = falcon.API(middleware=[public_cors.middleware, JSONTranslator()], )
+wsgi_app = api = falcon.API(middleware=[public_cors.middleware, JSONTranslator(), RequireJSON()], )
 
 helloWorld = HelloWorldResource()
 
