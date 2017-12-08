@@ -6,12 +6,12 @@
 </head>
 <body>
 
-<button onclick="api('/hello')">Send Reques</button>
+<button onclick="api('/hello')">Send Request</button>
 
 <script>
 
   function api(endpoint) {
-    const baseUrl = 'http://127.0.0.1:8000/api'
+    const baseUrl = 'http://127.0.0.1:8765/api'
     const url = baseUrl + endpoint
     let initial = {
       headers: {
